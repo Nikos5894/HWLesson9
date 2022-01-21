@@ -3,9 +3,9 @@ package com.company.cursor.exercise_4;
 import java.util.Arrays;
 
 public class Box {
-    public  static  int count =0;
-    private  int id;
-    private  Thing[] things;
+    public static int count = 0;
+    private int id;
+    private Thing[] things;
 
     public Box() {
         this.things = null;
@@ -32,9 +32,9 @@ public class Box {
         this.id = id;
     }
 
-    public Thing getThing(){
-        if(count>getThings().length){
-            count =0;
+    public Thing getThing() {
+        if (count > getThings().length) {
+            count = 0;
         }
         Thing[] things = getThings();
         Thing thing = things[count];

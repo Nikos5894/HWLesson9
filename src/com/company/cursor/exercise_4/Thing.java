@@ -21,11 +21,9 @@ public class Thing {
         this.isFragile = isFragile;
     }
 
-    public boolean addExtraPacking(){
-        System.out.println("all " + getId());
-        if(!isFragile()) return false;
-        Protector protector = new Protector();
-        System.out.println(getId());
+    public boolean addExtraPacking() {
+        if (!isFragile()) return false;
+        Protector.call(getName(), getId());
         return true;
     }
 

@@ -19,7 +19,7 @@ public class Task2Main {
         Collections.addAll(userList, user, user1, user2, user3, user4);
         System.out.println(userList);
 
-        var newList = userList.stream().filter(it -> it.getLoginDate().isAfter(LocalDate.now().minusDays(15))).collect(Collectors.toList());
+        var newList = userList.stream().filter(it -> it.getLoginDate().isAfter(LocalDate.now().minusDays(15))).collect(Collectors.groupingBy(User::getTeam, Collectors.toList()));
         System.out.println(newList);
 
 //        List<List<User>> bigList = new ArrayList<>();

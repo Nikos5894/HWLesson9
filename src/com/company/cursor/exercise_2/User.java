@@ -9,7 +9,7 @@ public class User {
 
     public User() {
         email = " ";
-        loginDate = LocalDate.of(2000, 01, 01);
+        loginDate = LocalDate.of(2000, 1, 1);
         team = null;
     }
 
@@ -48,7 +48,6 @@ public class User {
         return "User{" +
                 "email='" + email + '\'' +
                 ", loginDate=" + loginDate +
-                ", team=" + team +
                 '}';
     }
 }
