@@ -34,7 +34,7 @@ public class Task4Main {
                 .flatMap(Collection::stream)
                 .filter(Thing::isFragile)
                 .peek(Thing::addExtraPacking)
-                .forEach(System.out::println);
+                .forEach(it -> System.out.println(it + "\n"));
     }
 
 }

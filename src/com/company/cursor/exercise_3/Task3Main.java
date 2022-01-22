@@ -32,12 +32,12 @@ public class Task3Main {
         var countMoviesOfGenre = movieLists.stream()
                 .flatMap(Collection::stream)
                 .collect(Collectors.groupingBy(Movie::getGenre, Collectors.counting()));
-        System.out.println(countMoviesOfGenre);
+        System.out.println("Count of movies for a particular genre: " + countMoviesOfGenre);
 
         var averagePriceOfTickets = movieLists.stream()
                 .flatMap(Collection::stream)
                 .collect(Collectors.groupingBy(Movie::getGenre, Collectors.averagingInt(Movie::getPrice)));
-        System.out.println(averagePriceOfTickets);
+        System.out.println("Average price of tickets: " + averagePriceOfTickets);
 
 
     }
