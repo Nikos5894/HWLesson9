@@ -5,6 +5,6 @@ public enum Team {
     TEAMTWO,
     TEAMTHREE,
     TEAMFOUR,
-    TEAMFIVE;
+    TEAMFIVE
 
 }

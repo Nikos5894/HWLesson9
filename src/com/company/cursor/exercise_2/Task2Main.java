@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Task2Main {
+
     public static void main(String[] args) {
 
         User user = new User("cat@gmail.com", LocalDate.of(2022, 1, 19), Team.TEAMONE);
@@ -25,4 +26,5 @@ public class Task2Main {
         System.out.println(newList);
 
     }
+
 }

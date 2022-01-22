@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Task4Main {
+
     public static void main(String[] args) {
         List<Thing> thingList = new ArrayList<>();
         Thing thing = new Thing("Xbox", 1);
@@ -35,4 +36,5 @@ public class Task4Main {
                 .peek(Thing::addExtraPacking)
                 .forEach(System.out::println);
     }
+
 }

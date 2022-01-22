@@ -10,6 +10,7 @@ public class Task1Main {
         MyPredicate<String, Integer> myPredicate = Integer::valueOf;
         Integer x = myPredicate.myPredicate("123");
         System.out.println(x);
+
         List<Integer> list = new ArrayList<>();
         Collections.addAll(list, 1, 2, 3, 4);
         MySum<Integer> mySum = Integer::sum;
@@ -17,6 +18,5 @@ public class Task1Main {
         System.out.println(intSum);
     }
 
-    ;
 }
 
