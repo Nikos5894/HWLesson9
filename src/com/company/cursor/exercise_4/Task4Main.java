@@ -28,6 +28,11 @@ public class Task4Main {
         boxList.add(listBox);
         boxList.add(listBox1);
 
-        boxList.stream().map(Box::getThings).flatMap(Collection::stream).filter(Thing::isFragile).peek(Thing::addExtraPacking).forEach(System.out::println);
+        boxList.stream()
+                .map(Box::getThings)
+                .flatMap(Collection::stream)
+                .filter(Thing::isFragile)
+                .peek(Thing::addExtraPacking)
+                .forEach(System.out::println);
     }
 }

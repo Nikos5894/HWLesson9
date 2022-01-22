@@ -19,19 +19,10 @@ public class Task2Main {
         Collections.addAll(userList, user, user1, user2, user3, user4);
         System.out.println(userList);
 
-        var newList = userList.stream().filter(it -> it.getLoginDate().isAfter(LocalDate.now().minusDays(15))).collect(Collectors.groupingBy(User::getTeam, Collectors.toList()));
+        var newList = userList.stream()
+                .filter(it -> it.getLoginDate().isAfter(LocalDate.now().minusDays(15)))
+                .collect(Collectors.groupingBy(User::getTeam, Collectors.toList()));
         System.out.println(newList);
 
-//        List<List<User>> bigList = new ArrayList<>();
-//        MyCompare<Team,String> myCompare;
-//        do{
-//            if(bigList.isEmpty()){
-//                bigList.add(List.of(newList.get(0)));
-//            }
-//            if(myCompare.compare(bigList.get(0)))
-//        }while(!newList.isEmpty());
-
     }
-
-
 }
