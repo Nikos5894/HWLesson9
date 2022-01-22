@@ -1,26 +1,27 @@
 package com.company.cursor.exercise_4;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Box {
     public static int count = 0;
     private int id;
-    private Thing[] things;
+    private List<Thing> things;
 
     public Box() {
         this.things = null;
     }
 
-    public Box(int id, Thing[] things) {
+    public Box(int id, List<Thing> things) {
         this.id = id;
         this.things = things;
     }
 
-    public Thing[] getThings() {
+    public List<Thing> getThings() {
         return things;
     }
 
-    public void setThings(Thing[] things) {
+    public void setThings(List<Thing> things) {
         this.things = things;
     }
 
@@ -33,11 +34,11 @@ public class Box {
     }
 
     public Thing getThing() {
-        if (count > getThings().length) {
+        if (count > getThings().size()) {
             count = 0;
         }
-        Thing[] things = getThings();
-        Thing thing = things[count];
+        List<Thing> thingList = getThings();
+        Thing thing = thingList.get(count);
         count++;
 
         return thing;
@@ -47,7 +48,7 @@ public class Box {
     public String toString() {
         return "Box{" +
                 "id=" + id +
-                ", things=" + Arrays.toString(things) +
+                ", things=" + Arrays.toString(new List[]{things}) +
                 '}';
     }
 }
