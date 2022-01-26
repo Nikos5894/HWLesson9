@@ -3,7 +3,6 @@ package com.company.cursor.exercise_2;
 import java.time.LocalDate;
 
 public class User {
-
     private String email;
     private LocalDate loginDate;
     private Team team;

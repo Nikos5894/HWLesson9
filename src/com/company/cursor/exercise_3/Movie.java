@@ -1,7 +1,6 @@
 package com.company.cursor.exercise_3;
 
 public class Movie {
-
     private int tickets;
     private int price;
     private Genre genre;

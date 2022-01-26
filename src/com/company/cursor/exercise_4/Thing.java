@@ -1,7 +1,6 @@
 package com.company.cursor.exercise_4;
 
 public class Thing {
-
     private String name;
     private int id;
     private boolean isFragile;
