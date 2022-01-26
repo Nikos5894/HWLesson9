@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Box {
+
     public static int count = 0;
     private int id;
     private List<Thing> things;

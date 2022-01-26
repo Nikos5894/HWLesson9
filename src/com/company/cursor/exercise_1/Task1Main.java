@@ -17,6 +17,5 @@ public class Task1Main {
         Integer intSum = mySum.calculate(1, 2);
         System.out.println("Using self functional interface mySum: " + intSum);
     }
-
 }
 

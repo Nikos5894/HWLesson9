@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Task3Main {
+
     public static void main(String[] args) {
         Movie movie = new Movie(50, 20, Genre.ACTION);
         Movie movie1 = new Movie(60, 21, Genre.DRAMA);
@@ -38,7 +39,6 @@ public class Task3Main {
                 .flatMap(Collection::stream)
                 .collect(Collectors.groupingBy(Movie::getGenre, Collectors.averagingInt(Movie::getPrice)));
         System.out.println("Average price of tickets: " + averagePriceOfTickets);
-
 
     }
 }

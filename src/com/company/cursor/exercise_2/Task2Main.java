@@ -18,13 +18,12 @@ public class Task2Main {
 
         List<User> userList = new ArrayList<>();
         Collections.addAll(userList, user, user1, user2, user3, user4);
-        System.out.println("List of users \n" + userList +  "\n");
+        System.out.println("List of users \n" + userList + "\n");
 
         var newList = userList.stream()
                 .filter(it -> it.getLoginDate().isAfter(LocalDate.now().minusDays(7)))
-                .collect(Collectors.groupingBy(User::getTeam, Collectors.toList()));
+                .collect(Collectors.toList());
         System.out.println("List of users who logged after week ago, group by team \n" + newList);
 
     }
-
 }

@@ -8,6 +8,7 @@ import java.util.List;
 public class Task4Main {
 
     public static void main(String[] args) {
+
         List<Thing> thingList = new ArrayList<>();
         Thing thing = new Thing("Xbox", 1);
         Thing thing1 = new Thing("PlayStation", 123, true);
@@ -36,5 +37,4 @@ public class Task4Main {
                 .peek(Thing::addExtraPacking)
                 .forEach(it -> System.out.println(it + "\n"));
     }
-
 }
